@@ -20,6 +20,21 @@ img {
 body{
 	font-family: "Roboto", "Noto Sans KR", sans-serif;
 }
+.skip_nav a{
+	position: fixed;
+	left: 0;
+	top: -9999px;
+	z-index: 999;
+	width: 100%;
+	line-height: 40px;
+	text-align: center;
+	font-size: 0.875em;
+	background-color: #385170;
+	color: #fff;
+}
+.skip_nav a:focus{
+	top: 0;
+}
 header{
 	display: flex;
 	justify-content: space-between;
@@ -234,7 +249,7 @@ section{
 	align-items: flex-end;
 	width: 495px;
 	height: 570px;
-	background: url(images/heich.jpg) no-repeat;
+	background: url(../images/heich.jpg) no-repeat;
 }
 .banner3 .banner3_left .banner3_left1 .inner{
 	margin-left: 30px;
@@ -270,7 +285,7 @@ section{
 	width: 495px;
 	height: 300px;	
 	text-align: center;
-	background: url(images/new.png) no-repeat;
+	background: url(../images/new.png) no-repeat;
 	box-sizing: border-box;
 }
 .banner3 .banner3_left .banner3_left2 a .inner{
@@ -296,7 +311,7 @@ section{
 }
 .banner3 .banner3_left .banner3_left2 a:hover .inner,
 .banner3 .banner3_left .banner3_left2 a:focus .inner{ /*hover 디자인*/
-	background: url(images/sale.jpg) no-repeat;
+	background: url(../images/sale.jpg) no-repeat;
 }
 .banner3 .banner3_left .banner3_left2 a:hover strong,
 .banner3 .banner3_left .banner3_left2 a:hover span,
@@ -347,7 +362,7 @@ section{
 	color: #fff;
 }
 .banner3 .banner3_right .banner3_right1 a:hover .inner{
-	background-image: url(images/sale.jpg);
+	background-image: url(../images/sale.jpg);
 	color: #fff;
 }
 .banner3 .banner3_right .banner3_right2 a{
@@ -355,7 +370,7 @@ section{
 	align-items: flex-end;
 	width: 495px;
 	height: 570px;
-	background: url(images/mimic.jpg) no-repeat;
+	background: url(../images/mimic.jpg) no-repeat;
 }
 .banner3 .banner3_right .banner3_right2 .inner{
 	margin-left: 30px;
