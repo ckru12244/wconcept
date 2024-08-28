@@ -132,7 +132,8 @@ section{
 	display: flex;
 	gap: 30px;
 }
-.banner1_1{	
+.banner1_1 a{
+	display: block;
 	width: 690px;
 	height: 388px;
 	overflow: hidden;
@@ -220,7 +221,8 @@ section{
 	background-color: #B5252E;
 	color: #fff;
 }
-.banner2_2{	
+.banner2_2 a{
+	display: block;
 	width: 690px;
 	height: 388px;
 	overflow: hidden;
