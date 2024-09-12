@@ -74,9 +74,8 @@ nav > ul{
 	justify-content: center;
 	overflow: hidden;
 	background-color: #fff;
-	transition: 0.3s;
 }
-nav > ul:hover{
+nav > ul.active{
 	height: 190px;
 }
 nav > ul::after{
@@ -104,7 +103,7 @@ nav li ul a{
 	color: #555;
 }
 nav > ul > li > a:hover,
-nav > ul > li > a:focus{
+nav > ul > li.active > a{
 	color:#B0252C;
 }
 nav .sub a:hover,
