@@ -55,6 +55,21 @@ header{
 	display: flex;
 	gap: 23px;
 }
+.header_right ul li{
+	position: relative;
+}
+.header_right ul li::after{
+	content: "";
+	position: absolute;
+	left: -11px;
+	top: 4px;
+	width: 1px;
+	height: 13px;
+	background-color: #ddd;
+}
+.header_right ul li:first-child::after{
+	display: none;
+}
 .header_right a{
 	font-size: 12px;
 	color: #999;
@@ -74,6 +89,7 @@ nav > ul{
 	justify-content: center;
 	overflow: hidden;
 	background-color: #fff;
+	transition: height 0.3s;
 }
 nav > ul.active{
 	height: 190px;
@@ -112,35 +128,29 @@ nav .sub a:focus{
 	text-decoration: underline;
 }
 .slider{
-	position: relative;
 	margin-top: 60px;
-	height: 420px;
-	min-width: 1020px;
 }
-.slider ul li{
-	position: absolute;
-	left: 0;
-	top: 0;
+.slider .swiper {
 	width: 100%;
-	height: 420px;
-	opacity: 0;
-	transition: opacity 0.6s;
+	height: 100%;
 }
-.slider ul li.current{
-	opacity: 1;
+.slider .swiper-slide {
+	text-align: center;
+	font-size: 18px;
+	background: #fff;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
-.slider img{
+.slider .swiper-slide img {
+	display: block;
 	width: 100%;
 	height: 100%;
 	object-fit: cover;
 }
-.arrow{
-	position: absolute;
-	top: 50%;
-	width: 100%;
-	display: flex;
-	justify-content: space-between;
-	transform: translateY(-50%);
+.slider .swiper-button-next,
+.slider .swiper-button-prev{
+	color: #fff;
 }
 section{
 	display: flex;

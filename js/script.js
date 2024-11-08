@@ -1,34 +1,14 @@
 $(function(){
-	let n=0;
-
-	$(".slider li").eq(n).addClass("current");
-
-	$(".arrow .left").click(function(e){
-		e.preventDefault();
-
-		if(n > 0){
-			n--;
-		}
-		else{
-			n=3;
-		}
-		$(".slider li").removeClass("current")
-		$(".slider li").eq(n).addClass("current")
+	const mySwiper = new Swiper(".mySwiper", {
+		navigation: {
+			nextEl: ".mySwiper .swiper-button-next",
+			prevEl: ".mySwiper .swiper-button-prev"
+		},
+      	pagination: {
+        	el: ".my .swiper-pagination"
+      	}
 	});
-	$(".arrow .right").click(function(e){
-		e.preventDefault();
-
-		if(n < 3){
-			n++;
-		}
-		else{
-			n=0;
-		}
-		$(".slider li").removeClass("current")
-		$(".slider li").eq(n).addClass("current")
-	});
-
-	$("nav > ul > li > a").hover(
+	$("nav > ul > li").hover(
 		function(){
 			$("nav > ul").addClass("active");
 		},

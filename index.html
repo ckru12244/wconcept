@@ -7,6 +7,8 @@
 	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700&display=swap">
 	<link rel="shortcut icon" type="image/x-icon" href="https://static.wconcept.co.kr/favicon.ico" sizes="16x16">
 	<link rel="icon" type="image/x-icon" href="https://static.wconcept.co.kr/favicon.ico" sizes="16x16">
+	<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+	<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 	<script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
 	<script src="js/script.js"></script>
 	<link rel="stylesheet" href="css/style.css">
@@ -91,16 +93,17 @@
 			</ul>
 		</nav>
 		<div class="slider">
-			<ul>
-				<li><img src="images/key1.jpg" alt="key1"></li>
-				<li><img src="images/key2.jpg" alt="key2"></li>
-				<li><img src="images/key3.jpg" alt="key3"></li>
-				<li><img src="images/key4.jpg" alt="key4"></li>
-			</ul>			
-			<div class="arrow">
-				<a href="" class="left"><img src="images/btn_left.png" alt="btn_left"></a>
-				<a href="" class="right"><img src="images/btn_right.png" alt="btn_right"></a>
-			</div>
+			<div class="swiper mySwiper">
+				<div class="swiper-wrapper">
+				  <div class="swiper-slide"><img src="images/key1.jpg" alt="key1"></div>
+				  <div class="swiper-slide"><img src="images/key2.jpg" alt="key2"></div>
+				  <div class="swiper-slide"><img src="images/key3.jpg" alt="key3"></div>
+				  <div class="swiper-slide"><img src="images/key4.jpg" alt="key4"></div>
+				</div>
+				<div class="swiper-button-next"></div>
+				<div class="swiper-button-prev"></div>
+				<div class="swiper-pagination"></div>
+			  </div>
 		</div>
 		<section id="content">
 			<div class="banner1">
